@@ -1,0 +1,15 @@
+body {
+    width: 1920px;
+    margin: 0 auto;
+    font-family: Raleway,Roboto,Montserrat;
+}
+
+.page-header {
+    width: 1980px;
+    min-height: 1024px;
+    padding: 50px;
+    box-sizing: border-box;
+/*    border: 1px solid #008000;*/
+    background-image: url(../img/img-header/slider-bcground.png);
+    background-repeat: no-repeat;
+}
