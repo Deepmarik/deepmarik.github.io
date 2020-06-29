@@ -1,29 +1,66 @@
 body {
-    width: 1920px;
-    margin: 0 auto;
-    font-family: Raleway, Roboto, Montserrat;
+  width: 1920px;
+  font-family: Roboto, Raleway, Montserrat;
+  margin: 0;
+  color: #fff;
 }
-
 .page-header {
-    width: 1980px;
-    min-height: 1024px;
-    padding: 50px;
-    box-sizing: border-box;
-    /*    border: 1px solid #008000;*/
-    background-image: url(../img/img-header/slider-bcground.png);
-    background-repeat: no-repeat;
+  width: 1920px;
+  background-image: url(../img/img-header/slider-bcground.png);
+  background-repeat: no-repeat;
+  min-height: 1024px;
 }
-
-.header-name-company {
-    font-family: Raleway;
-    font-size: 34px;
-    line-height: 1.2;
-    font-weight: 400;
-    letter-spacing: -0.04em;
-    color: #ffffff;
+.page-header .header-top-wrp {
+  width: 1920px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-.header-nav{
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
+.page-header .header-top-wrp .header-name-company {
+  position: relative;
+  font-family: Raleway;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  margin: 0 0 0 21%;
+}
+.page-header .header-top-wrp .header-name-company::after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 56px;
+  /*    border: 1px solid #fff;*/
+  position: absolute;
+  top: -10px;
+  left: -70px;
+  background-image: url(../img/img-header/logos_icon.png);
+}
+.page-header .header-top-wrp .page-header-menu {
+  margin: 0 0 0 219px;
+  padding: 12px 0 0 0;
+}
+.page-header .header-top-wrp .page-header-menu .header-nav-list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.page-header .header-top-wrp .page-header-menu .header-nav-list .header-nav-list-item {
+  list-style-type: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #ffffff;
+  margin: 0 29px 0 0;
 }
