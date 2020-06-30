@@ -1,6 +1,6 @@
 body {
   width: 1920px;
-  font-family: Roboto, Raleway, Montserrat;
+  font-family: Roboto Raleway Montserrat;
   margin: 0;
   color: #fff;
 }
@@ -14,7 +14,7 @@ body {
 }
 .page-header .header-top-wrp {
   width: 1920px;
-  margin: 0 0 0 326px;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -22,6 +22,7 @@ body {
   box-sizing: border-box;
 }
 .page-header .header-top-wrp .logo-header {
+  margin: 0 219px 0 326px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -48,7 +49,7 @@ body {
   fill: #998675;
 }
 .page-header .header-top-wrp .page-header-menu {
-  margin: 0 0 0 219px;
+  margin: 0;
   padding: 0;
 }
 .page-header .header-top-wrp .page-header-menu .header-nav-list {
@@ -100,4 +101,116 @@ body {
   background-position: right;
   border: 1px solid gray;
   color: #fff;
+}
+.page-header .header-slider {
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  margin: 120px 0 0 0;
+  position: relative;
+  width: 1920px;
+}
+.page-header .header-slider .header-slider-arrow-left {
+  position: absolute;
+  top: 215px;
+  left: 150px;
+  fill: #fff;
+}
+.page-header .header-slider .header-slider-arrow-left:hover {
+  fill: #998675;
+}
+.page-header .header-slider .header-slider-arrow-right {
+  position: absolute;
+  top: 215px;
+  left: 1770px;
+  fill: #fff;
+}
+.page-header .header-slider .header-slider-arrow-right:hover {
+  fill: #998675;
+}
+.page-header .header-slider .header-slider-wrp {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  box-sizing: border-box;
+  width: 1920px;
+  margin: 0;
+}
+.page-header .header-slider .header-slider-wrp .hdr-slider-h2 {
+  font-family: Raleway;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #fff;
+}
+.page-header .header-slider .header-slider-wrp .hdr-slider-h1 {
+  font-family: Raleway;
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #ffffff;
+}
+.page-header .header-slider .header-slider-wrp .hdr-slider-txt {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #ffffff;
+  width: 574px;
+  text-align: center;
+}
+.page-header .header-slider .header-slider-wrp .hdr-slider-btn {
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: #998675;
+  border-radius: 10px;
+  width: 170px;
+  min-height: 53px;
+  margin: 52px 0 0 0;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 14px;
+}
+.page-header .header-slider .header-slider-wrp .hdr-slider-btn:hover {
+  background-color: #555555;
+  color: #000;
+}
+.page-header .header-slider .header-slider-wrp .hdr-slider-btn:active {
+  background-color: #998675;
+  color: #eee;
+}
+.page-header .header-slider .header-slider-wrp .hdr-slider-btn .hdr-slider-btn-txt {
+  font-family: Raleway;
+}
+.page-header .header-slider .slider-pagination {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  margin: 200px 0 0 0;
+}
+.page-header .header-slider .slider-pagination .pagination-item {
+  display: block;
+  width: 11px;
+  height: 11px;
+  background-color: #ccc;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  margin: 0 9px 0 0;
+}
+.page-header .header-slider .slider-pagination .pagination-item:hover {
+  background-color: transparent;
+  border: 2px solid #d3c1ad;
+  transform: scale(1.2);
 }
