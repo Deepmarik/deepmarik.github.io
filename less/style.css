@@ -9,45 +9,65 @@ body {
   width: 1920px;
   background-image: url(../img/img-header/slider-bcground.png);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   min-height: 1024px;
 }
 .page-header .header-top-wrp {
   width: 1920px;
-  margin: 0;
+  margin: 0 0 0 326px;
   display: flex;
   flex-wrap: wrap;
   padding: 50px;
   box-sizing: border-box;
 }
-.page-header .header-top-wrp .header-name-company {
-  position: relative;
+.page-header .header-top-wrp .logo-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  width: 181px;
+  justify-content: flex-start;
+}
+.page-header .header-top-wrp .logo-header .logo-header-style {
+  fill: #fff;
+}
+.page-header .header-top-wrp .logo-header .header-name-company {
   font-family: Raleway;
-  font-size: 34px;
   line-height: 1.2;
   font-weight: 400;
   letter-spacing: -0.04em;
-  margin: 0 0 0 21%;
+  color: #fff;
+  font-size: 28px;
 }
-.page-header .header-top-wrp .header-name-company::after {
-  content: " ";
-  display: block;
-  width: 64px;
-  height: 56px;
-  /*    border: 1px solid #fff;*/
-  position: absolute;
-  top: -10px;
-  left: -70px;
-  background-image: url(../img/img-header/logos_icon.png);
+.page-header .header-top-wrp .logo-header .header-name-company:hover {
+  color: #998675;
+}
+.page-header .header-top-wrp .logo-header-style:hover {
+  fill: #998675;
 }
 .page-header .header-top-wrp .page-header-menu {
   margin: 0 0 0 219px;
   padding: 12px 0 0 0;
+}
+.page-header .header-top-wrp .page-header-menu .header-nav-list::after {
+  content: " ";
+  display: block;
+  width: 18px;
+  height: 24px;
+  /*    border: 1px solid #fff;*/
+  position: absolute;
+  top: -6px;
+  left: 702px;
+  background-image: url(../img/img-header/icon_cart.png);
 }
 .page-header .header-top-wrp .page-header-menu .header-nav-list {
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 .page-header .header-top-wrp .page-header-menu .header-nav-list .header-nav-list-item {
   list-style-type: none;

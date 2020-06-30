@@ -1,0 +1,115 @@
+body {
+	width: 1920px;
+	font-family: @font-family;
+	margin: 0;
+	color: #fff;
+}
+
+.page-header {
+	width: @width;
+	background-image: url(../img/img-header/slider-bcground.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	min-height: 1024px;
+
+	.header-top-wrp {
+		width: @width;
+		margin: 0 0 0 326px;
+		.flex-box();
+		align-items: center;
+		.padding-site();
+
+
+		.logo-header {
+			.flex-box();
+			justify-content: space-between;
+			align-items: center;
+			text-decoration: none;
+			width: 181px;
+			justify-content: flex-start;
+
+			.logo-header-style {
+				.header-icons-style();
+			}
+
+			.header-name-company {
+				font-family: Raleway;
+				line-height: 1.2;
+				font-weight: 400;
+				letter-spacing: -0.04em;
+				color: #fff;
+				font-size: 28px;
+			}
+
+			.header-name-company:hover {
+				color: #998675;
+			}
+
+			.logo-header-style:hover {
+				fill: #998675;
+			}
+		}
+
+		.page-header-menu {
+			margin: 0 0 0 219px;
+			padding: 0;
+
+			.header-nav-list {
+				margin: 0;
+				padding: 0;
+				.flex-box();
+				.header-nav-list-item:nth-child(8){margin: 0;}
+				
+				.header-nav-list-item {
+					list-style-type: none;
+					font-family: Montserrat;
+					font-size: 14px;
+					line-height: 1.2;
+					font-weight: 300;
+					color: #ffffff;
+					.margin()
+				}
+				.header-nav-list-item:hover{color:#998675;}
+			}
+		}
+
+		.header-cart-btn {
+			align-items: center;
+			margin-left: 63px;
+		}
+
+		.header-cart-btn-style {
+			.header-icons-style();
+		}
+
+		.header-cart-btn-style:hover {
+			fill: #998675;
+		}
+
+		.header-form-search {
+					}
+
+		.header-search-style {
+			align-items: center;
+			height: 24px;
+			width: 24px;
+			outline: none;
+			background: transparent;
+			background-image: url(../img/img-header/icon_search.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			border: none;
+			margin-left: 28px;
+		}
+
+				.header-search-style:focus {
+			width: 300px;
+			transition: width 1s ease-out;
+			background-position: right;
+			border: 1px solid gray;
+			color:#fff;
+		}
+
+	}
+}
