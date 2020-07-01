@@ -8,9 +8,8 @@ body {
   width: 1920px;
   background-image: url(../img/img-header/slider-bcground.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: contain;
-  min-height: 1024px;
 }
 .page-header .header-top-wrp {
   width: 1920px;
@@ -90,7 +89,7 @@ body {
   outline: none;
   background: transparent;
   background-image: url(../img/img-header/icon_search.png);
-  background-size: contain;
+  background-size: top;
   background-repeat: no-repeat;
   border: none;
   margin-left: 28px;
@@ -213,4 +212,44 @@ body {
   background-color: transparent;
   border: 2px solid #d3c1ad;
   transform: scale(1.2);
+}
+main {
+  width: 1920px;
+  margin: 0;
+}
+main .possibility {
+  width: 1920px;
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .possibility .possibility-wrp {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  padding: 10px 10px 0 10px;
+  box-sizing: border-box;
+  align-items: center;
+}
+main .possibility .possibility-wrp .possibility-icon-style {
+  display: block;
+  fill: brown;
+}
+main .possibility .possibility-wrp .possibility-header-style {
+  font-family: Raleway;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+}
+main .possibility .possibility-wrp .possibility-txt-style {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #8c8c8c;
 }
