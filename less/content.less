@@ -1,6 +1,6 @@
 main {
 	width: @width;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 
 	.possibility {
@@ -10,6 +10,7 @@ main {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		position: relative;
 
 		.possibility-wrp {
 			display: flex;
@@ -102,47 +103,41 @@ main {
 			}
 		}
 
-		.possibility-img-wrp {
-			display: flex;
-			flex-wrap: wrap;
-			flex-direction: row;
-			box-sizing: border-box;
-			margin: 0;
-			position: relative;
+		.possibility-img-left {
+			display: block;
+			width: 770px;
+			position: absolute;
+			top: 707px;
+			left: 346px;
+			z-index: 1;
+			cursor: pointer;
 
-			.possibility-img-left {
-				width: 770px;
-				position: absolute;
-				top: 407px;
-				left: -1015px;
-				z-index: 1;
-				cursor: pointer;
+		}
 
-			}
+		.possibility-img-center {
+			display: block;
+			width: 770px;
+			position: absolute;
+			top: 625px;
+			left: 576px;
+			z-index: 5;
+			cursor: pointer;
 
-			.possibility-img-center {
-				width: 770px;
-				position: absolute;
-				top: 325px;
-				left: -775px;
-				z-index: 5;
-				cursor: pointer;
+		}
 
-			}
+		.possibility-img-right {
+			display: block;
+			width: 770px;
+			position: absolute;
+			top: 707px;
+			left: 790px;
+			z-index: 2;
+			cursor: pointer;
 
-			.possibility-img-right {
-				width: 770px;
-				position: absolute;
-				top: 407px;
-				left: -490px;
-				z-index: 2;
-				cursor: pointer;
+		}
 
-			}
-
-			.position:hover {
-				z-index: 10;
-			}
+		.position:hover {
+			z-index: 10;
 		}
 	}
 }

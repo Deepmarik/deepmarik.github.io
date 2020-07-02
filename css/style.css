@@ -1,7 +1,7 @@
 body {
   width: 1920px;
   font-family: Roboto Raleway Montserrat;
-  margin: 0;
+  margin: 0 auto;
   color: #fff;
 }
 .page-header {
@@ -9,7 +9,7 @@ body {
   background-image: url(../img/img-header/slider-bcground.png);
   background-repeat: no-repeat;
   background-position: top;
-  background-size: contain;
+  background-size: cover;
   min-height: 1024px;
   background-color: #555555;
 }
@@ -95,6 +95,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   border: none;
+  box-sizing: border-box;
   margin-left: 28px;
 }
 .page-header .header-top-wrp .header-search-style:focus {
@@ -218,7 +219,7 @@ body {
 }
 main {
   width: 1920px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 main .possibility {
@@ -227,6 +228,7 @@ main .possibility {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
 }
 main .possibility .possibility-wrp {
   display: flex;
@@ -302,38 +304,33 @@ main .possibility .possibility-content .possibility-content-txt {
   color: #8c8c8c;
   text-align: center;
 }
-main .possibility .possibility-img-wrp {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  box-sizing: border-box;
-  margin: 0;
-  position: relative;
-}
-main .possibility .possibility-img-wrp .possibility-img-left {
+main .possibility .possibility-img-left {
+  display: block;
   width: 770px;
   position: absolute;
-  top: 407px;
-  left: -1015px;
+  top: 707px;
+  left: 346px;
   z-index: 1;
   cursor: pointer;
 }
-main .possibility .possibility-img-wrp .possibility-img-center {
+main .possibility .possibility-img-center {
+  display: block;
   width: 770px;
   position: absolute;
-  top: 325px;
-  left: -775px;
+  top: 625px;
+  left: 576px;
   z-index: 5;
   cursor: pointer;
 }
-main .possibility .possibility-img-wrp .possibility-img-right {
+main .possibility .possibility-img-right {
+  display: block;
   width: 770px;
   position: absolute;
-  top: 407px;
-  left: -490px;
+  top: 707px;
+  left: 790px;
   z-index: 2;
   cursor: pointer;
 }
-main .possibility .possibility-img-wrp .position:hover {
+main .possibility .position:hover {
   z-index: 10;
 }

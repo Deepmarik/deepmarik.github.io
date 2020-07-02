@@ -2,16 +2,17 @@
 body {
   width: 1920px;
   font-family: Roboto Raleway Montserrat;
-  margin: 0;
+  margin: 0 auto;
   color: #fff;
 }
 .page-header {
   width: 1920px;
   background-image: url(../img/img-header/slider-bcground.png);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: top;
+  background-size: cover;
   min-height: 1024px;
+  background-color: #555555;
 }
 .page-header .header-top-wrp {
   width: 1920px;
@@ -21,6 +22,7 @@ body {
   align-items: center;
   padding: 50px;
   box-sizing: border-box;
+  padding-top: 40px;
 }
 .page-header .header-top-wrp .logo-header {
   margin: 0 219px 0 326px;
@@ -111,13 +113,13 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 400px;
+  margin: 0 auto;
   margin: 120px 0 0 0;
-  position: relative;
   width: 1920px;
 }
 .page-header .header-slider .header-slider-arrow-left {
   position: absolute;
-  top: 215px;
+  top: 475px;
   left: 150px;
   fill: #fff;
 }
@@ -126,7 +128,7 @@ body {
 }
 .page-header .header-slider .header-slider-arrow-right {
   position: absolute;
-  top: 215px;
+  top: 475px;
   left: 1770px;
   fill: #fff;
 }
@@ -175,7 +177,7 @@ body {
   border-radius: 10px;
   width: 170px;
   min-height: 53px;
-  margin: 52px 0 0 0;
+  margin: 36px 0 0 0;
   text-decoration: none;
   font-size: 14px;
   line-height: 23px;
@@ -199,7 +201,7 @@ body {
   width: 120px;
   display: flex;
   justify-content: space-between;
-  margin: 200px 0 0 0;
+  margin: 265px 0 0 0;
 }
 .page-header .header-slider .slider-pagination .pagination-item {
   display: block;
@@ -218,4 +220,121 @@ body {
 main {
   width: 1920px;
   margin: 0;
+  padding: 0;
+}
+main .possibility {
+  width: 1920px;
+  padding: 80px 50px 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .possibility .possibility-wrp {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  margin-left: 33px;
+  box-sizing: border-box;
+  align-items: center;
+}
+main .possibility .possibility-wrp .possibility-wrp:nth-child(4) {
+  margin-left: 0;
+}
+main .possibility .possibility-wrp .possibility-icon-style {
+  display: block;
+  fill: #555555;
+}
+main .possibility .possibility-wrp .possibility-icon-style:hover,
+main .possibility .possibility-wrp .possibility-header-style:hover {
+  fill: #c7b299;
+  color: #c7b299;
+}
+main .possibility .possibility-wrp .possibility-header-style {
+  font-family: Raleway;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+}
+main .possibility .possibility-wrp .possibility-txt-style {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #8c8c8c;
+  text-align: center;
+}
+main .possibility .possibility-wrp::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  background-color: #f1eee9;
+  margin: 33px auto;
+  align-self: flex-end;
+}
+main .possibility .possibility-wrp:hover::after {
+  background-color: #c7b299;
+}
+main .possibility .possibility-content {
+  margin: 163px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 780px;
+}
+main .possibility .possibility-content .possibility-content-header {
+  font-family: Raleway;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+  text-align: center;
+}
+main .possibility .possibility-content .possibility-content-txt {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #8c8c8c;
+  text-align: center;
+}
+main .possibility .possibility-img-wrp {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+}
+main .possibility .possibility-img-wrp .possibility-img-left {
+  width: 770px;
+  position: absolute;
+  top: 407px;
+  left: -1015px;
+  z-index: 1;
+  cursor: pointer;
+}
+main .possibility .possibility-img-wrp .possibility-img-center {
+  width: 770px;
+  position: absolute;
+  top: 325px;
+  left: -775px;
+  z-index: 5;
+  cursor: pointer;
+}
+main .possibility .possibility-img-wrp .possibility-img-right {
+  width: 770px;
+  position: absolute;
+  top: 407px;
+  left: -490px;
+  z-index: 2;
+  cursor: pointer;
+}
+main .possibility .possibility-img-wrp .position:hover {
+  z-index: 10;
 }
