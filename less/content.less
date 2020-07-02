@@ -1,10 +1,12 @@
 main {
 	width: @width;
 	margin: 0;
+	padding: 0;
 
 	.possibility {
 		width: @width;
-		.padding-site();
+		//.padding-site();
+		padding: 80px 50px 50px 0;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -15,13 +17,23 @@ main {
 			flex-direction: column;
 			justify-content: center;
 			width: 300px;
-			padding: 10px 10px 0 10px;
+			margin-left: 33px;
 			box-sizing: border-box;
 			align-items: center;
 
+			.possibility-wrp:nth-child(4) {
+				margin-left: 0;
+			}
+
 			.possibility-icon-style {
 				display: block;
-				fill: brown;
+				fill: #555555;
+			}
+
+			.possibility-icon-style:hover,
+			.possibility-header-style:hover {
+				fill: #c7b299;
+				color: #c7b299;
 			}
 
 			.possibility-header-style {
@@ -40,70 +52,97 @@ main {
 				line-height: 24px;
 				font-weight: 300;
 				color: #8c8c8c;
+				text-align: center;
 			}
 		}
 
-		.possibility-develop {
-			img {}
+		.possibility-wrp::after {
+			content: "";
+			display: block;
+			width: 100px;
+			height: 5px;
+			background-color: #f1eee9;
+			margin: 33px auto;
+			align-self: flex-end;
 
-			.possibility-header {}
-
-			.possibility-txt {}
 		}
 
-		.possibility-custom {
-			img {}
+		.possibility-wrp:hover::after {
+			background-color: #c7b299;
 		}
 
-		.possibility-txt {}
+		//text and multi-background
+		.possibility-content {
+			margin: 163px 0 0 0;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			align-items: center;
+			box-sizing: border-box;
+			width: 780px;
 
-		.possibility-header {}
+			.possibility-content-header {
+				//Text: Waxom is Realization of your Ideas.;
+				font-family: Raleway;
+				font-size: 30px;
+				line-height: 1.2;
+				font-weight: 600;
+				color: #555555;
+				text-align: center;
+			}
 
-		.possibility-marketing {
-			img {}
+			.possibility-content-txt {
+				//Text: Investigationes demonstraverunt 
+				font-family: Montserrat;
+				font-size: 16px;
+				line-height: 28px;
+				font-weight: 300;
+				color: #8c8c8c;
+				text-align: center;
+			}
+		}
 
-			.possibility-header {}
+		.possibility-img-wrp {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			box-sizing: border-box;
+			margin: 0;
+			position: relative;
 
-			.possibility-txt {}
+			.possibility-img-left {
+				width: 770px;
+				position: absolute;
+				top: 407px;
+				left: -1015px;
+				z-index: 1;
+				cursor: pointer;
+
+			}
+
+			.possibility-img-center {
+				width: 770px;
+				position: absolute;
+				top: 325px;
+				left: -775px;
+				z-index: 5;
+				cursor: pointer;
+
+			}
+
+			.possibility-img-right {
+				width: 770px;
+				position: absolute;
+				top: 407px;
+				left: -490px;
+				z-index: 2;
+				cursor: pointer;
+
+			}
+
+			.position:hover {
+				z-index: 10;
+			}
 		}
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

@@ -10,8 +10,10 @@ body {
 	background-image: url(../img/img-header/slider-bcground.png);
 	background-repeat: no-repeat;
 	background-position: top;
-	background-size: contain;
-	//min-height: 1024px;
+	background-size:contain;
+	min-height: 1024px;
+	background-color: #555555;
+
 
 	.header-top-wrp {
 		width: @width;
@@ -19,6 +21,8 @@ body {
 		.flex-box();
 		align-items: center;
 		.padding-site();
+		padding-top: 40px;
+
 
 		.logo-header {
 			margin: 0 219px 0 326px;
@@ -102,7 +106,7 @@ body {
 			outline: none;
 			background: transparent;
 			background-image: url(../img/img-header/icon_search.png);
-			background-size: top;
+			background-size:contain;
 			background-repeat: no-repeat;
 			border: none;
 			margin-left: 28px;
@@ -125,14 +129,14 @@ body {
 		justify-content: center;
 		align-items: center;
 		min-height: 400px;
-		//		margin: 0 auto;
+		margin: 0 auto;
 		margin: 120px 0 0 0;
-		position: relative;
+//		position: relative;
 		width: @width;
 
 		.header-slider-arrow-left {
 			position: absolute;
-			top: 215px;
+			top: 475px;
 			left: 150px;
 			fill: #fff;
 
@@ -145,7 +149,7 @@ body {
 
 		.header-slider-arrow-right {
 			position: absolute;
-			top: 215px;
+			top: 475px;
 			left: 1770px;
 			fill: #fff;
 
@@ -203,7 +207,7 @@ body {
 				border-radius: 10px;
 				width: 170px;
 				min-height: 53px;
-				margin: 52px 0 0 0;
+				margin: 36px 0 0 0;
 				text-decoration: none;
 				font-size: 14px;
 				line-height: 23px;
@@ -237,7 +241,7 @@ body {
 			width: 120px;
 			display: flex;
 			justify-content: space-between;
-			margin:200px 0 0 0;
+			margin: 265px 0 0 0;
 
 			.pagination-item {
 				display: block;
