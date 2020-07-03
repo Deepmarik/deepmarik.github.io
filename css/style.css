@@ -85,18 +85,36 @@ body {
 .page-header .header-top-wrp .header-cart-btn-style:hover {
   fill: #998675;
 }
+.page-header .header-top-wrp .header-form-search {
+  width: 30px;
+  height: 30px;
+  margin: 0 0 0 28px;
+  position: relative;
+}
+.page-header .header-top-wrp .header-form-search-label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/img-header/icon_search.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
 .page-header .header-top-wrp .header-search-style {
   align-items: center;
   height: 24px;
   width: 24px;
   outline: none;
   background: transparent;
-  background-image: url(../img/img-header/icon_search.png);
   background-size: contain;
   background-repeat: no-repeat;
+  top: 31px;
+  left: 0;
   border: none;
   box-sizing: border-box;
-  margin-left: 28px;
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
 }
 .page-header .header-top-wrp .header-search-style:focus {
   width: 300px;
@@ -115,27 +133,32 @@ body {
   min-height: 400px;
   margin: 0 auto;
   margin: 120px 0 0 0;
+  position: relative;
   width: 1920px;
 }
 .page-header .header-slider .header-slider-arrow-left {
-  position: absolute;
-  top: 475px;
-  left: 150px;
   fill: #fff;
 }
 .page-header .header-slider .header-slider-arrow-left:hover {
   fill: #998675;
 }
-.page-header .header-slider .header-slider-arrow-right {
+.page-header .header-slider .header-slider-arrow-left .slider-arrow-style-left {
   position: absolute;
-  top: 475px;
-  left: 1770px;
+  top: 210px;
+  left: 150px;
+}
+.page-header .header-slider-arrow-right {
   fill: #fff;
 }
-.page-header .header-slider .header-slider-arrow-right:hover {
+.page-header .header-slider-arrow-right:hover {
   fill: #998675;
 }
-.page-header .header-slider .header-slider-wrp {
+.page-header .header-slider-arrow-right .slider-arrow-style-right {
+  position: absolute;
+  top: 210px;
+  left: 1720px;
+}
+.page-header .header-slider-wrp {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -146,21 +169,21 @@ body {
   width: 1920px;
   margin: 0;
 }
-.page-header .header-slider .header-slider-wrp .hdr-slider-h2 {
+.page-header .header-slider-wrp .hdr-slider-h2 {
   font-family: Raleway;
   font-size: 36px;
   line-height: 1.2;
   font-weight: 500;
   color: #fff;
 }
-.page-header .header-slider .header-slider-wrp .hdr-slider-h1 {
+.page-header .header-slider-wrp .hdr-slider-h1 {
   font-family: Raleway;
   font-size: 52px;
   line-height: 1.2;
   font-weight: 800;
   color: #ffffff;
 }
-.page-header .header-slider .header-slider-wrp .hdr-slider-txt {
+.page-header .header-slider-wrp .hdr-slider-txt {
   font-family: Montserrat;
   font-size: 16px;
   line-height: 24px;
@@ -169,7 +192,7 @@ body {
   width: 574px;
   text-align: center;
 }
-.page-header .header-slider .header-slider-wrp .hdr-slider-btn {
+.page-header .header-slider-wrp .hdr-slider-btn {
   text-align: center;
   box-sizing: border-box;
   cursor: pointer;
@@ -186,24 +209,24 @@ body {
   color: #ffffff;
   padding: 14px;
 }
-.page-header .header-slider .header-slider-wrp .hdr-slider-btn:hover {
+.page-header .header-slider-wrp .hdr-slider-btn:hover {
   background-color: #555555;
   color: #000;
 }
-.page-header .header-slider .header-slider-wrp .hdr-slider-btn:active {
+.page-header .header-slider-wrp .hdr-slider-btn:active {
   background-color: #998675;
   color: #eee;
 }
-.page-header .header-slider .header-slider-wrp .hdr-slider-btn .hdr-slider-btn-txt {
+.page-header .header-slider-wrp .hdr-slider-btn .hdr-slider-btn-txt {
   font-family: Raleway;
 }
-.page-header .header-slider .slider-pagination {
+.page-header .slider-pagination {
   width: 120px;
   display: flex;
   justify-content: space-between;
   margin: 265px 0 0 0;
 }
-.page-header .header-slider .slider-pagination .pagination-item {
+.page-header .slider-pagination .pagination-item {
   display: block;
   width: 11px;
   height: 11px;
@@ -212,7 +235,7 @@ body {
   border: 2px solid transparent;
   margin: 0 9px 0 0;
 }
-.page-header .header-slider .slider-pagination .pagination-item:hover {
+.page-header .slider-pagination .pagination-item:hover {
   background-color: transparent;
   border: 2px solid #d3c1ad;
   transform: scale(1.2);
