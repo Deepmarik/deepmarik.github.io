@@ -1,0 +1,277 @@
+.project-card {
+	width: @width;
+	margin: 0 auto;
+	padding: 81px 0 80px 0;
+	.flex-box();
+	//justify-content: space-around;
+	flex-direction: column;
+
+	.project-card-hdr {
+		//Text: Our Latest Projects.;
+		font-family: Raleway;
+		font-size: 30px;
+		line-height: 1.2;
+		font-weight: 600;
+		color: #555555;
+		width: @width;
+		text-align: center;
+		display: block;
+		box-sizing: border-box;
+		margin: 0 0 24px 0;
+
+	}
+
+	.project-card-txt {
+		//Text: Investigationes demonstraverunt ;
+		font-family: Montserrat;
+		font-size: 16px;
+		line-height: 28px;
+		font-weight: 300;
+		color: #8c8c8c;
+		display: block;
+		width: 757px;
+		text-align: center;
+		margin: 0 0 40px 583px;
+	}
+
+	.project-card-btn {
+		width: @width;
+		.flex-box();
+		justify-content: center;
+		box-sizing: border-box;
+		margin-bottom: 40px;
+
+		.project-card-btn-style {
+			width: 120px;
+			//height: 32px;
+			border: 1.0px solid #ebebeb;
+			border-radius: 3.0px;
+			//Text: Web Design;
+			font-family: Montserrat;
+			font-size: 14px;
+			line-height: 21px;
+			font-weight: 300;
+			color: #8c8c8c;
+			margin: 0 10px 0 0;
+			//border: none;
+			outline: none;
+			padding: 10px 0 8px 0;
+
+
+			&:hover {
+				width: 120px;
+				background-color: #998675;
+				border-radius: 3.0px;
+				color: #fff;
+			}
+
+			&:active {
+				width: 120px;
+				background-color: #eee;
+				border-radius: 3.0px;
+				color: #8c8c8c;
+			}
+		}
+
+		.project-card-btn-style-1 {
+			width: 70px;
+			border: 1.0px solid #ebebeb;
+			border-radius: 3.0px;
+			//Text: Web Design;
+			font-family: Montserrat;
+			font-size: 14px;
+			line-height: 21px;
+			font-weight: 300;
+			color: #8c8c8c;
+			margin: 0 10px 0 0;
+			//border: none;
+			outline: none;
+			padding: 10px 0 8px 0;
+
+
+			&:hover {
+				width: 70px;
+				//height: 32px;
+				//background-image: url(../img/img-content/project%20card-btn-a.png);
+				background-color: #998675;
+				border-radius: 3.0px;
+				color: #fff;
+			}
+
+			&:active {
+				width: 70px;
+				//height: 32px;
+				//background-image: url(../img/img-content/project%20card-btn-a.png);
+				background-color: #eee;
+				border-radius: 3.0px;
+				color: #8c8c8c;
+			}
+		}
+	}
+
+	//Cards
+
+	.card-link-wrp {
+		margin: 0 auto;
+		padding: 0;
+		.flex-box();
+		justify-content: space-between;
+		width: 61%;
+
+		.project-card-link {
+			display: block;
+			width: 370px;
+			text-decoration: none;
+			text-align: left;
+			margin-bottom: 30px;
+			position: relative;
+
+
+			&:hover .project-card-content .card-txt {
+				color: #c7b299;
+			}
+
+			&:hover .project-card-content .card-hdr {
+				color: #fff;
+			}
+
+			.card-img {
+				display: block;
+				width: 100%;
+			}
+
+			&:hover .card-img {
+				filter: brightness(60%);
+			}
+
+			&:hover .project-card-content {
+				background-color: #211b19;
+			}
+
+			&:hover .project-card-content:before {
+				border-bottom: 10px solid #211b19;
+			}
+
+			.project-card-content:before {
+				content: "";
+				border: 20px solid transparent;
+				border-bottom: 10px solid #fff;
+				position: absolute;
+				top: -30px;
+				left: 19px;
+			}
+
+			.project-card-content {
+				width: 100%;
+				position: relative;
+
+				.card-hdr {
+					//Text: Claritas Etiam Processus;
+					display: block;
+					box-sizing: border-box;
+					font-family: Raleway;
+					font-size: 20px;
+					line-height: 1.2;
+					font-weight: 500;
+					color: #c7b299;
+					padding: 28px 0 10px 30px;
+				}
+
+
+				.card-txt {
+					//Text: Photography, Nature;
+					font-family: Montserrat;
+					font-size: 14px;
+					line-height: 20px;
+					font-weight: 300;
+					color: #d1d1d1;
+					padding: 0 0 30px 30px;
+					margin: 0;
+					display: block;
+				}
+
+			}
+
+			&:hover .card-btn-link {
+				display: block;
+			}
+
+			&:hover .card-btn-search {
+				display: block;
+			}
+
+			&:hover .card-btn-link:hover {
+				background-color: transparent;
+				cursor: pointer;
+				outline: none;
+			}
+
+			&:hover .card-btn-search:hover {
+				background-color: transparent;
+				cursor: pointer;
+				outline: none;
+			}
+
+			.card-btn-link,
+			.card-btn-search {
+				display: none;
+				width: 26px;
+				min-height: 26px;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+				border: none;
+				background-color: transparent;
+				position: absolute;
+				top: 45%
+			}
+
+			.card-btn-link {
+				background-image: url(../img/img-content/card_btn_link.png);
+				left: 35%;
+			}
+
+			.card-btn-search {
+				background-image: url(../img/img-content/card_btn_search.png);
+				width: 26px;
+				right: 35%;
+
+			}
+		}
+	}
+
+	.card-btn {
+		display: block;
+		text-align: center;
+		box-sizing: border-box;
+		cursor: pointer;
+		background-color: #998675;
+		border-radius: 5px;
+		width: 170px;
+		min-height: 50px;
+		text-decoration: none;
+		color: #ffffff;
+		padding: 14px;
+		margin: 10px 0 0 876px;
+
+		.card-btn-txt {
+			//Text: Load More;
+			font-family: Raleway;
+			font-size: 14px;
+			line-height: 23px;
+			font-weight: 800;
+			text-transform: uppercase;
+
+		}
+
+		&:hover {
+			color: #000;
+			background-color: #615855;
+		}
+
+		&:active {
+			color: #ffffff;
+			background-color: #998675;
+		}
+	}
+}

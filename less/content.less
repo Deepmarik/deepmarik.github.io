@@ -6,11 +6,12 @@ main {
 	.possibility {
 		width: @width;
 		//.padding-site();
-		padding: 80px 50px 50px 0;
+		padding: 80px 50px 0 0;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		position: relative;
+		//position: relative;
+		//min-height: 1073px;
 
 		.possibility-wrp {
 			display: flex;
@@ -29,12 +30,7 @@ main {
 			.possibility-icon-style {
 				display: block;
 				fill: #555555;
-			}
-
-			.possibility-icon-style:hover,
-			.possibility-header-style:hover {
-				fill: #c7b299;
-				color: #c7b299;
+				cursor: pointer;
 			}
 
 			.possibility-header-style {
@@ -44,6 +40,7 @@ main {
 				line-height: 1.2;
 				font-weight: 600;
 				color: #555555;
+				cursor: pointer;
 			}
 
 			.possibility-txt-style {
@@ -54,8 +51,17 @@ main {
 				font-weight: 300;
 				color: #8c8c8c;
 				text-align: center;
+				cursor: pointer;
 			}
 		}
+
+		.possibility-wrp:hover .possibility-icon-style,
+		.possibility-wrp:hover .possibility-header-style,
+		.possibility-wrp:hover .possibility-txt-style {
+			fill: #c7b299;
+			color: #c7b299
+		}
+
 
 		.possibility-wrp::after {
 			content: "";
@@ -72,6 +78,7 @@ main {
 			background-color: #c7b299;
 		}
 
+
 		//text and multi-background
 		.possibility-content {
 			margin: 163px 0 0 0;
@@ -81,6 +88,7 @@ main {
 			align-items: center;
 			box-sizing: border-box;
 			width: 780px;
+			//min-height: 619px;
 
 			.possibility-content-header {
 				//Text: Waxom is Realization of your Ideas.;
@@ -100,44 +108,51 @@ main {
 				font-weight: 300;
 				color: #8c8c8c;
 				text-align: center;
+
 			}
 		}
 
-		.possibility-img-left {
-			display: block;
-			width: 770px;
-			position: absolute;
-			top: 707px;
-			left: 346px;
-			z-index: 1;
-			cursor: pointer;
+		.possibility-img {
+			position: relative;
+			width: 100%;
+			min-height: 522px;
 
-		}
+			.possibility-img-left {
+				display: block;
+				width: 770px;
+				position: absolute;
+				top: 122px;
+				left: 346px;
+				z-index: 1;
+				cursor: pointer;
 
-		.possibility-img-center {
-			display: block;
-			width: 770px;
-			position: absolute;
-			top: 625px;
-			left: 576px;
-			z-index: 5;
-			cursor: pointer;
+			}
 
-		}
+			.possibility-img-center {
+				display: block;
+				width: 770px;
+				position: absolute;
+				top:40px;
+				left: 576px;
+				z-index: 5;
+				cursor: pointer;
 
-		.possibility-img-right {
-			display: block;
-			width: 770px;
-			position: absolute;
-			top: 707px;
-			left: 790px;
-			z-index: 2;
-			cursor: pointer;
+			}
 
-		}
+			.possibility-img-right {
+				display: block;
+				width: 770px;
+				position: absolute;
+				top: 122px;
+				left: 790px;
+				z-index: 2;
+				cursor: pointer;
 
-		.position:hover {
-			z-index: 10;
+			}
+
+			.position:hover {
+				z-index: 10;
+			}
 		}
 	}
 }
