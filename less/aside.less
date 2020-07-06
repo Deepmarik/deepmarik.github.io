@@ -1,0 +1,109 @@
+body {
+	width: 1920px;
+	font-family: @font-family;
+	margin: 0 auto;
+	color: #fff;
+}
+
+.content-aside {
+	width: @width;
+	box-sizing: border-box;
+	background-color: #f4f5f8;
+	background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+	min-height: 150px;
+	margin: 0 auto;
+	.flex-box();
+	justify-content: space-evenly;
+	//	flex-direction: column;
+	
+	padding: 50px 0 50px 0;
+
+
+	.content-aside-wrp {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+		.aside-header {
+			/* Text styles for "Waxom" */
+			font-family: Raleway;
+			font-size: 28px;
+			line-height: 1.2;
+			font-weight: 400;
+			/* Text styles for " Multipurpose WordPress Theme" */
+			color: #ffffff;
+			display: block;
+			width: 530px;
+			text-decoration: none;
+		}
+
+		.aside-header-link {
+			font-family: Raleway;
+			font-size: 28px;
+			line-height: 1.2;
+			font-weight: 400;
+			color: #fff;
+			text-decoration: none;
+
+			&:hover {
+				color: #c7b299;
+			}
+
+			&:active {
+				color: #fff;
+			}
+		}
+
+		.aside-txt {
+			display: block;
+			margin: 0;
+			//Text: Don't Forget to Rate 
+			font-family: Montserrat;
+			font-size: 18px;
+			line-height: 1.2;
+			font-weight: 300;
+			color: #615855;
+			width: 470px;
+		}
+	}
+
+	.aside-btn {
+		text-align: center;
+		box-sizing: border-box;
+		cursor: pointer;
+		background-color: #998675;
+		border-radius: 5px;
+		width: 170px;
+		min-height: 50px;
+		//margin: 40px 0 0 853px;
+		text-decoration: none;
+		font-size: 14px;
+		line-height: 23px;
+		font-weight: 800;
+		text-transform: uppercase;
+		color: #ffffff;
+		padding: 14px;
+		margin: 0 0 0 30px;
+
+
+		.aside-btn-txt {
+			//Text: Purchase Now;
+			font-family: Raleway;
+			font-size: 14px;
+			line-height: 23px;
+			font-weight: 800;
+			text-transform: uppercase;
+
+		}
+
+		&:hover {
+			color: #000;
+			background-color: #615855;
+		}
+
+		&:active {
+			color: #ffffff;
+			background-color: #998675;
+		}
+	}
+}
