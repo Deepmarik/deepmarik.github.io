@@ -820,3 +820,65 @@ body {
   font-weight: 300;
   color: #8c8c8c;
 }
+.statistics {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url(../img/img-content/statistic_bckg.png);
+}
+.statistics .statistics-wrp {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 69px 0 60px 0;
+}
+.statistics .stat-width-1 {
+  width: 137px;
+  margin-left: 0;
+}
+.statistics .stat-width-2 {
+  width: 126px;
+  margin-left: 106px;
+}
+.statistics .stat-width-3 {
+  width: 120px;
+  margin-left: 100px;
+}
+.statistics .stat-width-4 {
+  width: 80px;
+  margin-left: 105px;
+}
+.statistics .stat-width-5 {
+  width: 113px;
+  margin-left: 118px;
+}
+.statistics .stat-icon {
+  fill: #c7b299;
+  margin-bottom: 30px;
+}
+.statistics .count-number {
+  font-family: Montserrat;
+  font-size: 48px;
+  line-height: 36px;
+  font-weight: 200;
+  color: #ffffff;
+  margin-bottom: 21px;
+}
+.statistics .count {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #c7b299;
+}
+.statistics .count::after {
+  content: "";
+  display: block;
+  background-color: #ffffff;
+  width: 30px;
+  height: 2px;
+  align-self: flex-end;
+  margin: 30px auto 0;
+}

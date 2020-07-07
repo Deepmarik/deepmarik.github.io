@@ -101,9 +101,10 @@
 	.flex-box();
 	justify-content: center;
 	margin: 0 auto;
+
 	//align-content: center;
 	//	.padding-site();
-// Александр, в блоке .excellent-fig появляются отступы по 2,5рх, не могу убрать,margin не помог, где ошибаюсь?
+	// Александр, в блоке .excellent-fig появляются отступы по 2,5рх, не могу убрать,margin не помог, где ошибаюсь?
 	.excellent-fig {
 		display: block;
 		margin: 0;
@@ -111,7 +112,7 @@
 		box-sizing: border-box;
 		//border: 1px solid red;
 		//background-color:aqua;
-			}
+	}
 
 	.excellent-fig-img {
 		width: 423px;
@@ -175,5 +176,86 @@
 		line-height: 32px;
 		font-weight: 300;
 		color: #8c8c8c;
+	}
+}
+
+//Section statistics
+.statistics {
+	width: 100%;
+	min-height: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-image: url(../img/img-content/statistic_bckg.png);
+
+	.statistics-wrp {
+		//margin-left: 106px;
+		text-align: center;
+		box-sizing: border-box;
+		padding: 69px 0 60px 0;
+	}
+
+	.stat-width-1 {
+		width: 137px;
+		margin-left: 0;
+	}
+
+	.stat-width-2 {
+		width: 126px;
+		margin-left: 106px;
+	}
+
+	.stat-width-3 {
+		width: 120px;
+		margin-left: 100px;
+	}
+
+	.stat-width-4 {
+		width: 80px;
+		margin-left: 105px;
+	}
+
+	.stat-width-5 {
+		width: 113px;
+		margin-left: 118px;
+
+	}
+
+	.stat-icon {
+		fill: #c7b299;
+		margin-bottom: 30px;
+		
+	}
+
+	.count-number {
+		//Text: 3587;
+		font-family: Montserrat;
+		font-size: 48px;
+		line-height: 36px;
+		font-weight: 200;
+		color: #ffffff;
+		margin-bottom: 21px;
+	}
+
+	.count {
+		//Text: We launched;
+		font-family: Montserrat;
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: #c7b299;
+
+	}
+
+	.count::after {
+		content: "";
+		display: block;
+		background-color: #ffffff;
+		width: 30px;
+		height: 2px;
+		align-self: flex-end;
+		margin: 30px auto 0;
+
 	}
 }
