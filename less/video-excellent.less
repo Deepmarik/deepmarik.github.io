@@ -33,6 +33,7 @@
 
 	.video-txt-btn {
 		display: flex;
+		box-sizing: border-box;
 		width: 100px;
 		height: 100px;
 		border: none;
@@ -90,5 +91,89 @@
 		line-height: 24px;
 		font-weight: 400;
 		color: #c7b299;
+	}
+}
+
+//Section Excellent
+.excellent {
+	//margin: 0;
+	width: @width;
+	.flex-box();
+	justify-content: center;
+	margin: 0 auto;
+	//align-content: center;
+	//	.padding-site();
+// Александр, в блоке .excellent-fig появляются отступы по 2,5рх, не могу убрать,margin не помог, где ошибаюсь?
+	.excellent-fig {
+		display: block;
+		margin: 0;
+		padding-top: 79px;
+		box-sizing: border-box;
+		//border: 1px solid red;
+		//background-color:aqua;
+			}
+
+	.excellent-fig-img {
+		width: 423px;
+		height: 616px;
+		padding: 0;
+
+	}
+
+	.excellent-wrp {
+		padding-top: 195px;
+		width: 695px;
+		min-height: 317px;
+		box-sizing: border-box;
+
+	}
+
+	.excellent-hdr {
+		//Text: Excellent for Mobile Devices.;
+		font-family: Raleway;
+		font-size: 30px;
+		line-height: 1.2;
+		font-weight: 600;
+		color: #555555;
+		width: 100%;
+		text-align: left;
+		padding-left: 31px;
+	}
+
+	.excellent-p {
+		//Text: Qisi enim 
+		width: 100%;
+		font-family: Montserrat;
+		font-size: 16px;
+		line-height: 28px;
+		font-weight: 300;
+		color: #8c8c8c;
+		padding-left: 31px;
+	}
+
+	.excellent-list {
+		margin: 0 0 0 95px;
+		list-style-type: none;
+	}
+
+	.excellent-list-item::before {
+		display: block;
+		content: "";
+		position: absolute;
+		background-image: url(../img/img-content/item_icon.png);
+		width: 21px;
+		height: 21px;
+		top: 6px;
+		left: -50px;
+	}
+
+	.excellent-list-item {
+		//Text: Nam liber;
+		position: relative;
+		font-family: Montserrat;
+		font-size: 16px;
+		line-height: 32px;
+		font-weight: 300;
+		color: #8c8c8c;
 	}
 }
