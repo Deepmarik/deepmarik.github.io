@@ -383,13 +383,16 @@ body {
   min-height: 150px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px 0 50px 0;
+}
+.content-aside .content-aside-wrp {
+  display: flex;
   justify-content: center;
   flex-direction: column;
-  flex-wrap: wrap;
-  padding-left: 376px;
 }
-.content-aside .aside-header {
-  Text: Waxom Multipurpose WordPress Theme;
+.content-aside .content-aside-wrp .aside-header {
   /* Text styles for "Waxom" */
   font-family: Raleway;
   font-size: 28px;
@@ -398,16 +401,24 @@ body {
   /* Text styles for " Multipurpose WordPress Theme" */
   color: #ffffff;
   display: block;
+  width: 530px;
+  text-decoration: none;
 }
-.content-aside .aside-header-wax {
+.content-aside .content-aside-wrp .aside-header-link {
   font-family: Raleway;
   font-size: 28px;
   line-height: 1.2;
   font-weight: 400;
-  color: #c7b299;
-  width: 530px;
+  color: #fff;
+  text-decoration: none;
 }
-.content-aside .aside-txt {
+.content-aside .content-aside-wrp .aside-header-link:hover {
+  color: #c7b299;
+}
+.content-aside .content-aside-wrp .aside-header-link:active {
+  color: #fff;
+}
+.content-aside .content-aside-wrp .aside-txt {
   display: block;
   margin: 0;
   font-family: Montserrat;
@@ -415,6 +426,7 @@ body {
   line-height: 1.2;
   font-weight: 300;
   color: #615855;
+  width: 470px;
 }
 .content-aside .aside-btn {
   text-align: center;
@@ -424,7 +436,6 @@ body {
   border-radius: 5px;
   width: 170px;
   min-height: 50px;
-  margin: -50px 0 0 990px;
   text-decoration: none;
   font-size: 14px;
   line-height: 23px;
@@ -432,6 +443,14 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   padding: 14px;
+  margin: 0 0 0 30px;
+}
+.content-aside .aside-btn .aside-btn-txt {
+  font-family: Raleway;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 .content-aside .aside-btn:hover {
   color: #000;
@@ -443,8 +462,11 @@ body {
 }
 .project-card {
   width: 1920px;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 81px 0 80px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .project-card .project-card-hdr {
   font-family: Raleway;
@@ -454,6 +476,9 @@ body {
   color: #555555;
   width: 1920px;
   text-align: center;
+  display: block;
+  box-sizing: border-box;
+  margin: 0 0 24px 0;
 }
 .project-card .project-card-txt {
   font-family: Montserrat;
@@ -461,4 +486,248 @@ body {
   line-height: 28px;
   font-weight: 300;
   color: #8c8c8c;
+  display: block;
+  width: 757px;
+  text-align: center;
+  margin: 0 0 40px 583px;
+}
+.project-card .project-card-btn {
+  width: 1920px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+.project-card .project-card-btn .project-card-btn-style {
+  width: 120px;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 300;
+  color: #8c8c8c;
+  margin: 0 10px 0 0;
+  outline: none;
+  padding: 10px 0 8px 0;
+}
+.project-card .project-card-btn .project-card-btn-style:hover {
+  width: 120px;
+  background-color: #998675;
+  border-radius: 3px;
+  color: #fff;
+}
+.project-card .project-card-btn .project-card-btn-style:active {
+  width: 120px;
+  background-color: #eee;
+  border-radius: 3px;
+  color: #8c8c8c;
+}
+.project-card .project-card-btn .project-card-btn-style-1 {
+  width: 70px;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 300;
+  color: #8c8c8c;
+  margin: 0 10px 0 0;
+  outline: none;
+  padding: 10px 0 8px 0;
+}
+.project-card .project-card-btn .project-card-btn-style-1:hover {
+  width: 70px;
+  background-color: #998675;
+  border-radius: 3px;
+  color: #fff;
+}
+.project-card .project-card-btn .project-card-btn-style-1:active {
+  width: 70px;
+  background-color: #eee;
+  border-radius: 3px;
+  color: #8c8c8c;
+}
+.project-card .card-link-wrp {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 61%;
+}
+.project-card .card-link-wrp .project-card-link {
+  display: block;
+  width: 370px;
+  text-decoration: none;
+  text-align: left;
+  margin-bottom: 30px;
+  position: relative;
+}
+.project-card .card-link-wrp .project-card-link:hover .project-card-content .card-txt {
+  color: #c7b299;
+}
+.project-card .card-link-wrp .project-card-link:hover .project-card-content .card-hdr {
+  color: #fff;
+}
+.project-card .card-link-wrp .project-card-link .card-img {
+  display: block;
+  width: 100%;
+}
+.project-card .card-link-wrp .project-card-link:hover .card-img {
+  filter: brightness(60%);
+}
+.project-card .card-link-wrp .project-card-link:hover .project-card-content {
+  background-color: #211b19;
+}
+.project-card .card-link-wrp .project-card-link:hover .project-card-content:before {
+  border-bottom: 10px solid #211b19;
+}
+.project-card .card-link-wrp .project-card-link .project-card-content:before {
+  content: "";
+  border: 20px solid transparent;
+  border-bottom: 10px solid #fff;
+  position: absolute;
+  top: -30px;
+  left: 19px;
+}
+.project-card .card-link-wrp .project-card-link .project-card-content {
+  width: 100%;
+  position: relative;
+}
+.project-card .card-link-wrp .project-card-link .project-card-content .card-hdr {
+  display: block;
+  box-sizing: border-box;
+  font-family: Raleway;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #c7b299;
+  padding: 28px 0 10px 30px;
+}
+.project-card .card-link-wrp .project-card-link .project-card-content .card-txt {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #d1d1d1;
+  padding: 0 0 30px 30px;
+  margin: 0;
+  display: block;
+}
+.project-card .card-link-wrp .project-card-link:hover .card-btn-link {
+  display: block;
+}
+.project-card .card-link-wrp .project-card-link:hover .card-btn-search {
+  display: block;
+}
+.project-card .card-link-wrp .project-card-link:hover .card-btn-link:hover {
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+.project-card .card-link-wrp .project-card-link:hover .card-btn-search:hover {
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+.project-card .card-link-wrp .project-card-link .card-btn-link,
+.project-card .card-link-wrp .project-card-link .card-btn-search {
+  display: none;
+  width: 26px;
+  min-height: 26px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 45%;
+}
+.project-card .card-link-wrp .project-card-link .card-btn-link {
+  background-image: url(../img/img-content/card_btn_link.png);
+  left: 35%;
+}
+.project-card .card-link-wrp .project-card-link .card-btn-search {
+  background-image: url(../img/img-content/card_btn_search.png);
+  width: 26px;
+  right: 35%;
+}
+.project-card .card-btn {
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: #998675;
+  border-radius: 5px;
+  width: 170px;
+  min-height: 50px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 14px;
+  margin: 10px 0 0 876px;
+}
+.project-card .card-btn .card-btn-txt {
+  font-family: Raleway;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.project-card .card-btn:hover {
+  color: #000;
+  background-color: #615855;
+}
+.project-card .card-btn:active {
+  color: #ffffff;
+  background-color: #998675;
+}
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  background-color: #ccc;
+  border: 1px solid red;
+}
+.video .fill {
+  display: block;
+  width: 100%;
+  object-fit: fill;
+  position: absolute;
+}
+.video .video-file {
+  width: 100vh;
+  height: 100vh;
+}
+.video .video-txt-wrp {
+  width: 552px;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  border: 1px solid gold;
+}
+.video .video-txt-title {
+  font-family: Raleway;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+}
+.video .video-txt-p {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #555555;
+}
+.video .video-txt-time {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #c7b299;
 }
