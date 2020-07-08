@@ -99,33 +99,37 @@
 	//margin: 0;
 	width: @width;
 	.flex-box();
+	min-height: 705px;
 	justify-content: center;
 	margin: 0 auto;
+	background-image: url(../img/img-content/excellent_iphone_in_hand.png);
+	background-position: 416px 0px;
+	background-repeat: no-repeat;
+	background-position-y: bottom;
 
-	//align-content: center;
-	//	.padding-site();
-	// Александр, в блоке .excellent-fig появляются отступы по 2,5рх, не могу убрать,margin не помог, где ошибаюсь?
-	.excellent-fig {
-		display: block;
-		margin: 0;
-		padding-top: 79px;
-		box-sizing: border-box;
-		//border: 1px solid red;
-		//background-color:aqua;
-	}
+	// Александр, в блоке .excellent-fig  при использовании figure появляются отступы по 2,5рх, не могу убрать,margin не помог, где ошибаюсь?
+	//.excellent-fig {
+	//	display: block;
+	//	margin: 0;
+	//	padding-top: 79px;
+	//	box-sizing: border-box;
+	//border: 1px solid red;
+	//background-color:aqua;
+	//}
 
-	.excellent-fig-img {
-		width: 423px;
-		height: 616px;
-		padding: 0;
+	//	.excellent-fig-img {
+	//		width: 423px;
+	//		height: 616px;
+	//		padding: 0;
 
-	}
+	//	}
 
 	.excellent-wrp {
 		padding-top: 195px;
 		width: 695px;
 		min-height: 317px;
 		box-sizing: border-box;
+		margin-left: 460px;
 
 	}
 
@@ -186,13 +190,14 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
 	background-image: url(../img/img-content/statistic_bckg.png);
 
 	.statistics-wrp {
 		//margin-left: 106px;
 		text-align: center;
 		box-sizing: border-box;
-		padding: 69px 0 60px 0;
+		//padding: 69px 0 60px 0;
 	}
 
 	.stat-width-1 {
@@ -224,7 +229,7 @@
 	.stat-icon {
 		fill: #c7b299;
 		margin-bottom: 30px;
-		
+
 	}
 
 	.count-number {
@@ -257,5 +262,157 @@
 		align-self: flex-end;
 		margin: 30px auto 0;
 
+	}
+}
+
+//Section Recent
+.recent {
+	width: 1920px;
+	margin: 0 auto;
+	padding: 81px 0 80px 0;
+	display: flex;
+	flex-wrap: wrap;
+	//	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.recent-hdr {
+		//Text: Recent Posts.;
+		width: 100%;
+		text-align: center;
+		font-family: Raleway;
+		font-size: 30px;
+		line-height: 1.2;
+		font-weight: 600;
+		color: #555555;
+	}
+
+	.recent-txt {
+		//Text: Investigationes f
+		font-family: Montserrat;
+		font-size: 16px;
+		line-height: 28px;
+		font-weight: 300;
+		color: #8c8c8c;
+		padding: 0 583px 0 583px;
+		margin: 30px 0 40px 0;
+		width: 757px;
+		text-align: center;
+	}
+
+	.recent-art {
+		width: 370px;
+		margin-left: 30px;
+		position: relative;
+
+		.recent-art:nth-child(1) {
+			margin-left: 0;
+		}
+
+		.recent-art-img {
+			display: block;
+			padding-bottom: 30px;
+		}
+
+		.art-img-date-wrp {
+			display: flex;
+			flex-wrap: wrap;
+			position: absolute;
+			width: 50px;
+			min-height: 60px;
+			top: 20px;
+			left: 20px;
+			justify-content: center;
+		}
+
+		.img-number {
+			//Text: 30;
+			font-family: Montserrat;
+			font-size: 24px;
+			line-height: 20px;
+			font-weight: 300;
+			color: #fff;
+		}
+
+		.img-month {
+			//			Text: Sep.;
+			font-family: Roboto;
+			font-size: 12px;
+			line-height: 20px;
+			font-weight: 400;
+			color: #fff;
+		}
+
+
+		.art-hdr {
+			//Text: Lorem ipsum dolor sit amet;
+			font-family: Raleway;
+			font-size: 20px;
+			line-height: 1.2;
+			font-weight: 500;
+			color: #555555;
+			//padding-top: 30px 0 19px 30px;
+			padding-left: 30px;
+			//padding-top: 30px;
+		}
+
+		.art-txt {
+			//Text: Claritas est etiam 
+			font-family: Montserrat;
+			font-size: 14px;
+			line-height: 22px;
+			font-weight: 300;
+			color: #8c8c8c;
+			padding: 19px 0 27px 30px;
+		}
+
+
+
+		.art-btn-link {
+			padding-left: 30px;
+
+			&:hover {}
+		}
+
+		.art-btn-style {
+			//Text: Read More;
+			font-family: Montserrat;
+			font-size: 14px;
+			line-height: 20px;
+			font-weight: 300;
+			color: #c7b299;
+			outline: none;
+			border: none;
+			background-color: #fff;
+		}
+	}
+
+	.art-arrow-left {}
+
+	.art-arrow-right {}
+}
+
+//Section Partners
+
+.partners {
+	width: @width;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../img/img-content/partners_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 140px 0 140px 0;
+	margin: 0;
+
+	.partners-logo {
+		display: block;
+		width: 210px;
+		margin-left: 90px;
+		cursor: pointer;
+	}
+
+	&:hover .partners-logo-img:hover {
+		filter: invert(70%);
 	}
 }

@@ -759,25 +759,20 @@ body {
   width: 1920px;
   display: flex;
   flex-wrap: wrap;
+  min-height: 705px;
   justify-content: center;
   margin: 0 auto;
-}
-.excellent .excellent-fig {
-  display: block;
-  margin: 0;
-  padding-top: 79px;
-  box-sizing: border-box;
-}
-.excellent .excellent-fig-img {
-  width: 423px;
-  height: 616px;
-  padding: 0;
+  background-image: url(../img/img-content/excellent_iphone_in_hand.png);
+  background-position: 416px 0px;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
 }
 .excellent .excellent-wrp {
   padding-top: 195px;
   width: 695px;
   min-height: 317px;
   box-sizing: border-box;
+  margin-left: 460px;
 }
 .excellent .excellent-hdr {
   font-family: Raleway;
@@ -826,12 +821,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   background-image: url(../img/img-content/statistic_bckg.png);
 }
 .statistics .statistics-wrp {
   text-align: center;
   box-sizing: border-box;
-  padding: 69px 0 60px 0;
 }
 .statistics .stat-width-1 {
   width: 137px;
@@ -881,4 +876,118 @@ body {
   height: 2px;
   align-self: flex-end;
   margin: 30px auto 0;
+}
+.recent {
+  width: 1920px;
+  margin: 0 auto;
+  padding: 81px 0 80px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.recent .recent-hdr {
+  width: 100%;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+}
+.recent .recent-txt {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #8c8c8c;
+  padding: 0 583px 0 583px;
+  margin: 30px 0 40px 0;
+  width: 757px;
+  text-align: center;
+}
+.recent .recent-art {
+  width: 370px;
+  margin-left: 30px;
+  position: relative;
+}
+.recent .recent-art .recent-art:nth-child(1) {
+  margin-left: 0;
+}
+.recent .recent-art .recent-art-img {
+  display: block;
+  padding-bottom: 30px;
+}
+.recent .recent-art .art-img-date-wrp {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 50px;
+  min-height: 60px;
+  top: 20px;
+  left: 20px;
+  justify-content: center;
+}
+.recent .recent-art .img-number {
+  font-family: Montserrat;
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #fff;
+}
+.recent .recent-art .img-month {
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+.recent .recent-art .art-hdr {
+  font-family: Raleway;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #555555;
+  padding-left: 30px;
+}
+.recent .recent-art .art-txt {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #8c8c8c;
+  padding: 19px 0 27px 30px;
+}
+.recent .recent-art .art-btn-link {
+  padding-left: 30px;
+}
+.recent .recent-art .art-btn-style {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #c7b299;
+  outline: none;
+  border: none;
+  background-color: #fff;
+}
+.partners {
+  width: 1920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/img-content/partners_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 140px 0 140px 0;
+  margin: 0;
+}
+.partners .partners-logo {
+  display: block;
+  width: 210px;
+  margin-left: 90px;
+  cursor: pointer;
+}
+.partners:hover .partners-logo-img:hover {
+  filter: invert(70%);
 }
