@@ -920,27 +920,46 @@ body {
 }
 .recent .recent-art .art-img-date-wrp {
   display: flex;
-  flex-wrap: wrap;
   position: absolute;
   width: 50px;
-  min-height: 60px;
+  flex-direction: column;
   top: 20px;
   left: 20px;
   justify-content: center;
 }
+.recent .recent-art:hover .art-img-date-wrp .img-number {
+  background-color: #c7b299;
+}
+.recent .recent-art:hover .art-img-date-wrp .img-month {
+  background-color: #a48d72;
+}
+.recent .recent-art:active .art-img-date-wrp .img-number {
+  background-color: #363636;
+}
+.recent .recent-art:active .art-img-date-wrp .img-month {
+  background-color: #252525;
+}
 .recent .recent-art .img-number {
   font-family: Montserrat;
+  width: 50px;
   font-size: 24px;
-  line-height: 20px;
+  line-height: 30px;
   font-weight: 300;
   color: #fff;
+  text-align: center;
+  background-color: #363636;
+  border-radius: 3.0px 3.0px 0.0px 0.0px;
 }
 .recent .recent-art .img-month {
   font-family: Roboto;
+  width: 50px;
   font-size: 12px;
   line-height: 20px;
   font-weight: 400;
   color: #fff;
+  text-align: center;
+  background-color: #252525;
+  border-radius: 0.0px 0.0px 3.0px 3.0px;
 }
 .recent .recent-art .art-hdr {
   font-family: Raleway;
@@ -957,11 +976,13 @@ body {
   font-weight: 300;
   color: #8c8c8c;
   padding: 19px 0 27px 30px;
+  margin: 0;
 }
 .recent .recent-art .art-btn-link {
   padding-left: 30px;
+  position: relative;
 }
-.recent .recent-art .art-btn-style {
+.recent .recent-art .art-btn-link .art-btn-style {
   font-family: Montserrat;
   font-size: 14px;
   line-height: 20px;
@@ -969,6 +990,86 @@ body {
   color: #c7b299;
   outline: none;
   border: none;
+  background-color: #fff;
+  padding: 0;
+  margin-bottom: 40px;
+}
+.recent .recent-art .art-btn-link::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 115px;
+  border: 8px solid transparent;
+  border-left: 9px solid #c7b299;
+}
+.recent .recent-art:hover .art-btn-style,
+.recent .recent-art:hover .art-hdr {
+  color: #c7b299;
+  background-color: #362f2d;
+}
+.recent .recent-art:hover .art-txt {
+  color: #fff;
+}
+.recent .recent-art:active.art-txt {
+  color: #8c8c8c;
+}
+.recent .recent-art:active .art-btn-style,
+.recent .recent-art:active .art-hdr {
+  color: #c7b299;
+  background-color: #fff;
+}
+.recent .recent-art:active .art-btn-style {
+  color: #c7b299;
+}
+.recent .recent-art:hover .art-btn-link::after {
+  border-left: 9px solid #c7b299;
+}
+.recent .recent-art:hover {
+  background-color: #362f2d;
+}
+.recent .recent-art:active {
+  background-color: #fff;
+}
+.recent .arrow-wrp {
+  width: 100%;
+  text-align: center;
+  margin-top: 33px;
+  box-sizing: border-box;
+}
+.recent .arrow-wrp .art-arrow-left {
+  background-image: url(/img/left-arrow.png);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  margin-left: 6px;
+  border: none;
+  outline: none;
+}
+.recent .arrow-wrp .art-arrow-left .arrow-size {
+  width: 22px;
+  height: 22px;
+}
+.recent .arrow-wrp .art-arrow-right {
+  background-image: url(../img/right-arrow.png);
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+}
+.recent .arrow-wrp .art-arrow-left:hover {
+  filter: invert(30%);
+}
+.recent .arrow-wrp .art-arrow-right:hover {
+  filter: invert(30%);
+}
+.recent .arrow-wrp .art-arrow-right:active {
+  filter: invert(0%);
+  background-color: #fff;
+}
+.recent .arrow-wrp .art-arrow-left:active {
+  filter: invert(0%);
   background-color: #fff;
 }
 .partners {
@@ -990,4 +1091,55 @@ body {
 }
 .partners:hover .partners-logo-img:hover {
   filter: invert(70%);
+}
+.footer {
+  width: 1920px;
+  margin: 0;
+}
+.footer .footer-content {
+  width: 100%;
+  background-color: #191919;
+}
+.footer .art-company {
+  width: 258px;
+}
+.footer .art-logo-link {
+  text-decoration: none;
+  color: #fff;
+  fill: #fff;
+}
+.footer .art-logo-link:hover .logo-header-style,
+.footer .art-logo-link:hover .footer-name-company {
+  color: #c7b299;
+  fill: #c7b299;
+}
+.footer .footer-name-company {
+  font-family: Raleway;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+}
+.footer .art-company-txt {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #555555;
+}
+.footer .footer-end {
+  background-color: #111111;
+  width: 100%;
+  margin: 0;
+}
+.footer .end-txt {
+  font-family: Montserrat;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #555555;
+}
+.footer .end-txt .end-link {
+  text-decoration: none;
 }

@@ -316,31 +316,56 @@
 
 		.art-img-date-wrp {
 			display: flex;
-			flex-wrap: wrap;
+			//flex-wrap: wrap;
 			position: absolute;
 			width: 50px;
-			min-height: 60px;
+			flex-direction: column;
 			top: 20px;
 			left: 20px;
 			justify-content: center;
 		}
 
+		&:hover .art-img-date-wrp .img-number {
+			background-color: #c7b299;
+		}
+
+		&:hover .art-img-date-wrp .img-month {
+			background-color: #a48d72;
+		}
+
+		&:active .art-img-date-wrp .img-number {
+			background-color: #363636;
+		}
+
+		&:active .art-img-date-wrp .img-month {
+			background-color: #252525;
+		}
+
 		.img-number {
 			//Text: 30;
 			font-family: Montserrat;
+			width: 50px;
 			font-size: 24px;
-			line-height: 20px;
+			line-height: 30px;
 			font-weight: 300;
 			color: #fff;
+			text-align: center;
+			background-color: #363636;
+			border-radius: 3.0px 3.0px 0.0px 0.0px;
+
 		}
 
 		.img-month {
 			//			Text: Sep.;
 			font-family: Roboto;
+			width: 50px;
 			font-size: 12px;
 			line-height: 20px;
 			font-weight: 400;
 			color: #fff;
+			text-align: center;
+			background-color: #252525;
+			border-radius: 0.0px 0.0px 3.0px 3.0px;
 		}
 
 
@@ -364,32 +389,125 @@
 			font-weight: 300;
 			color: #8c8c8c;
 			padding: 19px 0 27px 30px;
+			margin: 0;
 		}
-
 
 
 		.art-btn-link {
 			padding-left: 30px;
+			position: relative;
 
-			&:hover {}
+
+			.art-btn-style {
+				//Text: Read More;
+				font-family: Montserrat;
+				font-size: 14px;
+				line-height: 20px;
+				font-weight: 300;
+				color: #c7b299;
+				outline: none;
+				border: none;
+				background-color: #fff;
+				padding: 0;
+				margin-bottom: 40px;
+			}
 		}
 
-		.art-btn-style {
-			//Text: Read More;
-			font-family: Montserrat;
-			font-size: 14px;
-			line-height: 20px;
-			font-weight: 300;
+		.art-btn-link::after {
+			content: "";
+			position: absolute;
+			top: 2px;
+			left: 115px;
+			border: 8px solid transparent;
+			border-left: 9px solid #c7b299;
+		}
+
+		&:hover .art-btn-style,
+		&:hover .art-hdr {
+			//filter: invert(70%);
 			color: #c7b299;
-			outline: none;
-			border: none;
+			background-color: #362f2d;
+		}
+
+		&:hover .art-txt {
+			color: #fff;
+		}
+
+		&:active.art-txt {
+			color: #8c8c8c;
+		}
+
+		&:active .art-btn-style,
+		&:active .art-hdr {
+			//filter: invert(70%);
+			color: #c7b299;
+			background-color: #fff;
+		}
+
+		&:active .art-btn-style {
+			color: #c7b299;
+		}
+
+		&:hover .art-btn-link::after {
+			border-left: 9px solid #c7b299;
+		}
+
+		&:hover {
+			background-color: #362f2d;
+		}
+
+		&:active {
 			background-color: #fff;
 		}
 	}
 
-	.art-arrow-left {}
+	.arrow-wrp {
+		width: 100%;
+		text-align: center;
+		margin-top: 33px;
+		box-sizing: border-box;
 
-	.art-arrow-right {}
+		.art-arrow-left {
+			background-image: url(/img/left-arrow.png);
+			border-radius: 50%;
+			width: 22px;
+			height: 22px;
+			margin-left: 6px;
+			border: none;
+			outline: none;
+
+
+			.arrow-size {
+				width: 22px;
+				height: 22px;
+			}
+		}
+
+		.art-arrow-right {
+			background-image: url(../img/right-arrow.png);
+			border-radius: 50%;
+			width: 22px;
+			height: 22px;
+			border: none;
+			outline: none;
+			background-color: #fff;
+
+		}
+
+		.art-arrow-left:hover {
+			filter: invert(30%);
+		}
+
+		.art-arrow-right:hover {
+			filter: invert(30%);
+		}
+
+		.art-arrow-right:active{filter: invert(0%);
+		background-color: #fff;}
+		.art-arrow-left:active{filter: invert(0%);
+		background-color: #fff;}
+	}
+
 }
 
 //Section Partners
