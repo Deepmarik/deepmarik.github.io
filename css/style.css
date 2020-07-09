@@ -1002,20 +1002,22 @@ body {
   border: 8px solid transparent;
   border-left: 9px solid #c7b299;
 }
-.recent .recent-art:hover .art-btn-style,
 .recent .recent-art:hover .art-hdr {
   color: #c7b299;
-  background-color: #362f2d;
+}
+.recent .recent-art:active .art-hdr {
+  color: #555;
 }
 .recent .recent-art:hover .art-txt {
   color: #fff;
 }
-.recent .recent-art:active.art-txt {
-  color: #8c8c8c;
+.recent .recent-art:active .art-txt {
+  color: #555;
 }
-.recent .recent-art:active .art-btn-style,
-.recent .recent-art:active .art-hdr {
-  color: #c7b299;
+.recent .recent-art:hover .art-btn-style {
+  background-color: #362f2d;
+}
+.recent .recent-art:active .art-btn-style {
   background-color: #fff;
 }
 .recent .recent-art:active .art-btn-style {

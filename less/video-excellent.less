@@ -276,6 +276,8 @@
 	align-items: center;
 	justify-content: center;
 
+
+
 	.recent-hdr {
 		//Text: Recent Posts.;
 		width: 100%;
@@ -422,25 +424,27 @@
 			border-left: 9px solid #c7b299;
 		}
 
-		&:hover .art-btn-style,
+
 		&:hover .art-hdr {
-			//filter: invert(70%);
 			color: #c7b299;
-			background-color: #362f2d;
+		}
+
+		&:active .art-hdr {
+			color: #555;
 		}
 
 		&:hover .art-txt {
 			color: #fff;
 		}
 
-		&:active.art-txt {
-			color: #8c8c8c;
+		&:active .art-txt {
+			color: #555;
 		}
 
-		&:active .art-btn-style,
-		&:active .art-hdr {
-			//filter: invert(70%);
-			color: #c7b299;
+		&:hover .art-btn-style {
+			background-color: #362f2d;
+		}
+		&:active .art-btn-style {
 			background-color: #fff;
 		}
 
@@ -502,12 +506,16 @@
 			filter: invert(30%);
 		}
 
-		.art-arrow-right:active{filter: invert(0%);
-		background-color: #fff;}
-		.art-arrow-left:active{filter: invert(0%);
-		background-color: #fff;}
-	}
+		.art-arrow-right:active {
+			filter: invert(0%);
+			background-color: #fff;
+		}
 
+		.art-arrow-left:active {
+			filter: invert(0%);
+			background-color: #fff;
+		}
+	}
 }
 
 //Section Partners
