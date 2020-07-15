@@ -1,0 +1,548 @@
+.video {
+	//margin: 0 auto;
+	width: @width;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 705px;
+	position: relative;
+	overflow: hidden;
+	background-color: #ccc;
+	//border: 1px solid red;
+
+
+	.video-file {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.video-txt-wrp {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		width: 552px;
+		//padding: 10px;
+		box-sizing: border-box;
+		position: absolute;
+		//border: 1px solid gold;
+		align-items: center;
+		//		top:0;
+		//		left: 0;
+	}
+
+	.video-txt-btn {
+		display: flex;
+		box-sizing: border-box;
+		width: 100px;
+		height: 100px;
+		border: none;
+		border-radius: 50%;
+		outline: none;
+		background-color: rgba(0, 0, 0, 0.2);
+
+		.video-txt-btn-icon {
+			margin: auto;
+			fill: #fff;
+		}
+	}
+
+	.video-txt-btn:hover .video-txt-btn-icon {
+		fill: #d3c1ad;
+	}
+
+	.video-txt-btn:active .video-txt-btn-icon {
+		fill: #fff;
+
+	}
+
+	.video-txt-title,
+	.video-txt-p,
+	.video-txt-time {
+		display: block;
+	}
+
+	.video-txt-title {
+		//Text: Excellent for Mobile Devices.;
+		font-family: raleway;
+		font-size: 30px;
+		line-height: 1.2;
+		font-weight: 600;
+		color: #fff;
+		margin: 44px 0 29px 0;
+
+	}
+
+	.video-txt-p {
+		//Text: Investigationes demonstraverunt 
+		font-family: montserrat;
+		font-size: 16px;
+		line-height: 28px;
+		font-weight: 300;
+		color: #fff;
+		text-align: center;
+		margin: 0 0 40px 0;
+	}
+
+	.video-txt-time {
+		//Text: 03:26;
+		font-family: montserrat;
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: 400;
+		color: #c7b299;
+	}
+}
+
+//Section Excellent
+.excellent {
+	//margin: 0;
+	width: @width;
+	.flex-box();
+	min-height: 705px;
+	justify-content: center;
+	margin: 0 auto;
+	background-image: url(../img/img-content/excellent_iphone_in_hand.png);
+	background-position: 416px 0px;
+	background-repeat: no-repeat;
+	background-position-y: bottom;
+
+	// Александр, в блоке .excellent-fig  при использовании figure появляются отступы по 2,5рх, не могу убрать,margin не помог, где ошибаюсь?
+	//.excellent-fig {
+	//	display: block;
+	//	margin: 0;
+	//	padding-top: 79px;
+	//	box-sizing: border-box;
+	//border: 1px solid red;
+	//background-color:aqua;
+	//}
+
+	//	.excellent-fig-img {
+	//		width: 423px;
+	//		height: 616px;
+	//		padding: 0;
+
+	//	}
+
+	.excellent-wrp {
+		padding-top: 195px;
+		width: 695px;
+		min-height: 317px;
+		box-sizing: border-box;
+		margin-left: 460px;
+
+	}
+
+	.excellent-hdr {
+		//Text: Excellent for Mobile Devices.;
+		font-family: Raleway;
+		font-size: 30px;
+		line-height: 1.2;
+		font-weight: 600;
+		color: #555555;
+		width: 100%;
+		text-align: left;
+		padding-left: 31px;
+	}
+
+	.excellent-p {
+		//Text: Qisi enim 
+		width: 100%;
+		font-family: Montserrat;
+		font-size: 16px;
+		line-height: 28px;
+		font-weight: 300;
+		color: #8c8c8c;
+		padding-left: 31px;
+	}
+
+	.excellent-list {
+		margin: 0 0 0 95px;
+		list-style-type: none;
+	}
+
+	.excellent-list-item::before {
+		display: block;
+		content: "";
+		position: absolute;
+		background-image: url(../img/img-content/item_icon.png);
+		width: 21px;
+		height: 21px;
+		top: 6px;
+		left: -50px;
+	}
+
+	.excellent-list-item {
+		//Text: Nam liber;
+		position: relative;
+		font-family: Montserrat;
+		font-size: 16px;
+		line-height: 32px;
+		font-weight: 300;
+		color: #8c8c8c;
+	}
+}
+
+//Section statistics
+.statistics {
+	width: 100%;
+	min-height: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../img/img-content/statistic_bckg.png);
+
+	.statistics-wrp {
+		//margin-left: 106px;
+		text-align: center;
+		box-sizing: border-box;
+		//padding: 69px 0 60px 0;
+	}
+
+	.stat-width-1 {
+		width: 137px;
+		margin-left: 0;
+	}
+
+	.stat-width-2 {
+		width: 126px;
+		margin-left: 106px;
+	}
+
+	.stat-width-3 {
+		width: 120px;
+		margin-left: 100px;
+	}
+
+	.stat-width-4 {
+		width: 80px;
+		margin-left: 105px;
+	}
+
+	.stat-width-5 {
+		width: 113px;
+		margin-left: 118px;
+
+	}
+
+	.stat-icon {
+		fill: #c7b299;
+		margin-bottom: 30px;
+
+	}
+
+	.count-number {
+		//Text: 3587;
+		font-family: Montserrat;
+		font-size: 48px;
+		line-height: 36px;
+		font-weight: 200;
+		color: #ffffff;
+		margin-bottom: 21px;
+	}
+
+	.count {
+		//Text: We launched;
+		font-family: Montserrat;
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: #c7b299;
+
+	}
+
+	.count::after {
+		content: "";
+		display: block;
+		background-color: #ffffff;
+		width: 30px;
+		height: 2px;
+		align-self: flex-end;
+		margin: 30px auto 0;
+
+	}
+}
+
+//Section Recent
+.recent {
+	width: 1920px;
+	margin: 0 auto;
+	padding: 81px 0 80px 0;
+	display: flex;
+	flex-wrap: wrap;
+	//	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+
+
+	.recent-hdr {
+		//Text: Recent Posts.;
+		width: 100%;
+		text-align: center;
+		font-family: Raleway;
+		font-size: 30px;
+		line-height: 1.2;
+		font-weight: 600;
+		color: #555555;
+	}
+
+	.recent-txt {
+		//Text: Investigationes f
+		font-family: Montserrat;
+		font-size: 16px;
+		line-height: 28px;
+		font-weight: 300;
+		color: #8c8c8c;
+		padding: 0 583px 0 583px;
+		margin: 30px 0 40px 0;
+		width: 757px;
+		text-align: center;
+	}
+
+	.recent-art {
+		width: 370px;
+		margin-left: 30px;
+		position: relative;
+
+		.recent-art:nth-child(1) {
+			margin-left: 0;
+		}
+
+		.recent-art-img {
+			display: block;
+			padding-bottom: 30px;
+		}
+
+		.art-img-date-wrp {
+			display: flex;
+			//flex-wrap: wrap;
+			position: absolute;
+			width: 50px;
+			flex-direction: column;
+			top: 20px;
+			left: 20px;
+			justify-content: center;
+		}
+
+		&:hover .art-img-date-wrp .img-number {
+			background-color: #c7b299;
+		}
+
+		&:hover .art-img-date-wrp .img-month {
+			background-color: #a48d72;
+		}
+
+		&:active .art-img-date-wrp .img-number {
+			background-color: #363636;
+		}
+
+		&:active .art-img-date-wrp .img-month {
+			background-color: #252525;
+		}
+
+		.img-number {
+			//Text: 30;
+			font-family: Montserrat;
+			width: 50px;
+			font-size: 24px;
+			line-height: 30px;
+			font-weight: 300;
+			color: #fff;
+			text-align: center;
+			background-color: #363636;
+			border-radius: 3.0px 3.0px 0.0px 0.0px;
+
+		}
+
+		.img-month {
+			//			Text: Sep.;
+			font-family: Roboto;
+			width: 50px;
+			font-size: 12px;
+			line-height: 20px;
+			font-weight: 400;
+			color: #fff;
+			text-align: center;
+			background-color: #252525;
+			border-radius: 0.0px 0.0px 3.0px 3.0px;
+		}
+
+
+		.art-hdr {
+			//Text: Lorem ipsum dolor sit amet;
+			font-family: Raleway;
+			font-size: 20px;
+			line-height: 1.2;
+			font-weight: 500;
+			color: #555555;
+			//padding-top: 30px 0 19px 30px;
+			padding-left: 30px;
+			//padding-top: 30px;
+		}
+
+		.art-txt {
+			//Text: Claritas est etiam 
+			font-family: Montserrat;
+			font-size: 14px;
+			line-height: 22px;
+			font-weight: 300;
+			color: #8c8c8c;
+			padding: 19px 0 27px 30px;
+			margin: 0;
+		}
+
+
+		.art-btn-link {
+			padding-left: 30px;
+			position: relative;
+
+
+			.art-btn-style {
+				//Text: Read More;
+				font-family: Montserrat;
+				font-size: 14px;
+				line-height: 20px;
+				font-weight: 300;
+				color: #c7b299;
+				outline: none;
+				border: none;
+				background-color: #fff;
+				padding: 0;
+				margin-bottom: 40px;
+			}
+		}
+
+		.art-btn-link::after {
+			content: "";
+			position: absolute;
+			top: 2px;
+			left: 115px;
+			border: 8px solid transparent;
+			border-left: 9px solid #c7b299;
+		}
+
+
+		&:hover .art-hdr {
+			color: #c7b299;
+		}
+
+		&:active .art-hdr {
+			color: #555;
+		}
+
+		&:hover .art-txt {
+			color: #fff;
+		}
+
+		&:active .art-txt {
+			color: #555;
+		}
+
+		&:hover .art-btn-style {
+			background-color: #362f2d;
+		}
+		&:active .art-btn-style {
+			background-color: #fff;
+		}
+
+		&:active .art-btn-style {
+			color: #c7b299;
+		}
+
+		&:hover .art-btn-link::after {
+			border-left: 9px solid #c7b299;
+		}
+
+		&:hover {
+			background-color: #362f2d;
+		}
+
+		&:active {
+			background-color: #fff;
+		}
+	}
+
+	.arrow-wrp {
+		width: 100%;
+		text-align: center;
+		margin-top: 33px;
+		box-sizing: border-box;
+
+		.art-arrow-left {
+			background-image: url(/img/left-arrow.png);
+			border-radius: 50%;
+			width: 22px;
+			height: 22px;
+			margin-left: 6px;
+			border: none;
+			outline: none;
+
+
+			.arrow-size {
+				width: 22px;
+				height: 22px;
+			}
+		}
+
+		.art-arrow-right {
+			background-image: url(../img/right-arrow.png);
+			border-radius: 50%;
+			width: 22px;
+			height: 22px;
+			border: none;
+			outline: none;
+			background-color: #fff;
+
+		}
+
+		.art-arrow-left:hover {
+			filter: invert(30%);
+		}
+
+		.art-arrow-right:hover {
+			filter: invert(30%);
+		}
+
+		.art-arrow-right:active {
+			filter: invert(0%);
+			background-color: #fff;
+		}
+
+		.art-arrow-left:active {
+			filter: invert(0%);
+			background-color: #fff;
+		}
+	}
+}
+
+//Section Partners
+
+.partners {
+	width: @width;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../img/img-content/partners_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 140px 0 140px 0;
+	margin: 0;
+
+	.partners-logo {
+		display: block;
+		width: 210px;
+		margin-left: 90px;
+		cursor: pointer;
+	}
+
+	&:hover .partners-logo-img:hover {
+		filter: invert(70%);
+	}
+	&:active .partners-logo-img:active {
+		filter: brightness(90%);
+		
+	}
+}

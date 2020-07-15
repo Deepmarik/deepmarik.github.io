@@ -1,0 +1,168 @@
+main {
+	width: @width;
+	margin: 0 auto;
+	padding: 0;
+
+	.possibility {
+		width: @width;
+		//.padding-site();
+		padding: 80px 50px 0 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		//position: relative;
+		//min-height: 1073px;
+
+		.possibility-wrp {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			justify-content: center;
+			width: 300px;
+			margin-left: 33px;
+			box-sizing: border-box;
+			align-items: center;
+
+			.possibility-wrp:nth-child(4) {
+				margin-left: 0;
+			}
+
+			.possibility-icon-style {
+				display: block;
+				fill: #555555;
+				cursor: pointer;
+			}
+
+			.possibility-header-style {
+				//Text: Web & App Design;
+				font-family: raleway;
+				font-size: 22px;
+				line-height: 1.2;
+				font-weight: 600;
+				color: #555555;
+				cursor: pointer;
+			}
+
+			.possibility-txt-style {
+				//Text: Nam liber tempor cum
+				font-family: montserrat;
+				font-size: 14px;
+				line-height: 24px;
+				font-weight: 300;
+				color: #8c8c8c;
+				text-align: center;
+				cursor: pointer;
+			}
+		}
+
+		.possibility-wrp:hover .possibility-icon-style,
+		.possibility-wrp:hover .possibility-header-style,
+		.possibility-wrp:hover .possibility-txt-style {
+			fill: #c7b299;
+			color: #c7b299
+		}
+
+
+		.possibility-wrp::after {
+			content: "";
+			display: block;
+			width: 100px;
+			height: 5px;
+			background-color: #f1eee9;
+			margin: 33px auto;
+			align-self: flex-end;
+
+		}
+
+		.possibility-wrp:hover::after {
+			background-color: #c7b299;
+		}
+
+		.possibility-wrp:active .possibility-icon-style,
+		.possibility-wrp:active .possibility-header-style,
+		.possibility-wrp:active .possibility-txt-style {
+			fill: #8c8c8c;
+			color: #8c8c8c;
+		}
+
+		.possibility-wrp:active::after {
+			background-color: #8c8c8c;
+		}
+
+		//text and multi-background
+		.possibility-content {
+			margin: 163px 0 0 0;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			align-items: center;
+			box-sizing: border-box;
+			width: 780px;
+			//min-height: 619px;
+
+			.possibility-content-header {
+				//Text: Waxom is Realization of your Ideas.;
+				font-family: raleway;
+				font-size: 30px;
+				line-height: 1.2;
+				font-weight: 600;
+				color: #555555;
+				text-align: center;
+			}
+
+			.possibility-content-txt {
+				//Text: Investigationes demonstraverunt 
+				font-family: montserrat;
+				font-size: 16px;
+				line-height: 28px;
+				font-weight: 300;
+				color: #8c8c8c;
+				text-align: center;
+
+			}
+		}
+
+		.possibility-img {
+			position: relative;
+			width: 100%;
+			min-height: 522px;
+
+			.possibility-img-left {
+				display: block;
+				width: 770px;
+				position: absolute;
+				top: 122px;
+				left: 346px;
+				z-index: 1;
+				cursor: pointer;
+
+			}
+
+			.possibility-img-center {
+				display: block;
+				width: 770px;
+				position: absolute;
+				top: 40px;
+				left: 576px;
+				z-index: 5;
+				cursor: pointer;
+
+			}
+
+			.possibility-img-right {
+				display: block;
+				width: 770px;
+				position: absolute;
+				top: 122px;
+				left: 790px;
+				z-index: 2;
+				cursor: pointer;
+
+			}
+
+			.position:hover {
+				z-index: 10;
+			}
+		}
+	}
+}

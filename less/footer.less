@@ -1,0 +1,270 @@
+.footer {
+	width: @width;
+	margin: 0;
+
+
+	.footer-content {
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		background-color: #191919;
+		justify-content: center;
+		padding: 80px 0;
+	}
+
+	.art-company {
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+		//justify-content: center;
+		width: 258px;
+		position: relative;
+
+		.art-logo-link {
+			text-decoration: none;
+			color: #fff;
+			fill: #fff;
+			align-items: center;
+			display: flex;
+
+		}
+
+		.art-logo-link:hover .logo-header-style,
+		.art-logo-link:hover .footer-name-company {
+			color: #c7b299;
+			fill: #c7b299;
+		}
+
+		.footer-name-company {
+			//Text: Waxom;
+			font-family: Raleway;
+			font-size: 34px;
+			line-height: 1.2;
+			font-weight: 400;
+			letter-spacing: -0.04em;
+			color: #ffffff;
+
+		}
+
+		.art-company-txt {
+			//Text: Lorem ipsum 
+			font-family: Montserrat;
+			font-size: 14px;
+			line-height: 24px;
+			font-weight: 300;
+			color: #555555;
+		}
+
+		.art-btn-link {
+			//padding-left: 30px;
+			position: relative;
+
+			.art-btn-style {
+				//Text: Read More;
+				font-family: Montserrat;
+				font-size: 14px;
+				line-height: 20px;
+				font-weight: 300;
+				color: #d1d1d1;
+				outline: none;
+				border: none;
+				background-color: #191919;
+				padding: 0;
+				margin-bottom: 40px;
+			}
+		}
+
+		.art-btn-link::after {
+			content: "";
+			position: absolute;
+			top: 2px;
+			left: 90px;
+			border: 8px solid transparent;
+			border-left: 9px solid #d1d1d1;
+		}
+
+		&:hover .art-btn-style {
+			color: #c7b299;
+		}
+
+		&:hover .art-btn-link::after {
+			border-left: 9px solid #c7b299;
+		}
+
+		&:active .art-btn-style {
+			color: #d1d1d1;
+		}
+
+		&:active.art-btn-link::after {
+			border-left: 9px solid #d1d1d1;
+		}
+	}
+
+	////////////////////////////////
+	.footer-recent-wrp {
+		width: 250px;
+		display: flex;
+		flex-direction: column;
+		padding-top: 27px;
+		margin: 0 42px 0 42px;
+	}
+
+	.ftr-recent-hdr {
+		//Text: Recent Posts;
+		font-family: Raleway;
+		font-size: 24px;
+		line-height: 1.2;
+		font-weight: 700;
+		color: #ffffff;
+		margin-bottom: 30px;
+	}
+
+	.link-recent {
+		text-decoration: none;
+		border-bottom: 2px solid #252525;
+
+		&:hover .link-recent-time {
+			color: #fff;
+		}
+
+		&:hover .link-recent-txt {
+			color: #c7b299;
+		}
+	}
+
+	.link-recent-time {
+		font-family: Montserrat;
+		font-size: 12px;
+		line-height: 20px;
+		font-weight: 300;
+		color: #363636;
+	}
+
+	.link-recent-txt {
+		//Text: Lorem ipsum dolor sit amet 
+		font-family: Montserrat;
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 300;
+		color: #555555;
+	}
+
+	///////////
+	.footer-twitter-wrp {
+		width: 250px;
+		display: flex;
+		flex-direction: column;
+		padding-top: 27px;
+		margin-right: 42px;
+	
+	}
+
+
+	.twitt-txt-style {
+		font-family: Montserrat;
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 300;
+		color: #555;
+		margin: 0;
+		
+	}
+	.brd-top-style{border-top: 2px solid #252525;}
+	.email-style {
+		font-family: Montserrat;
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 300;
+		color: #00bff3;
+	}
+
+	.twitt-link-style {
+		color: #959595;
+	}
+
+	.twitt-time-style {
+		//Text: 3 mins ago;
+		font-family: Montserrat;
+		font-size: 12px;
+		line-height: 20px;
+		font-weight: 300;
+		color: #363636;
+	}
+
+	////////////
+	.footer-widget-wrp {
+		width: 280px;
+		margin: 0;
+		padding-top: 27px;
+	}
+
+	.widget-hdr {
+		//Text: Dribbble Widget;
+		width: 100%;
+		font-family: Raleway;
+		font-size: 24px;
+		line-height: 1.2;
+		font-weight: 700;
+		color: #ffffff;
+		margin-bottom: 33px;
+	}
+
+	.widget-photo-left-top {
+		padding: 33px 10px 10px 0;
+	}
+
+	.widget-photo-right-top {
+		padding: 33px 0 10px 0;
+	}
+
+	.widget-photo-left-bot {
+		padding: 0 10px 0 0;
+	}
+
+	.widget-photo-right-bot {
+		padding: 0;
+	}
+
+	//section footer-end
+	.footer-end {
+		padding: 45px 0 54px 0;
+		background-color: #111111;
+		width: 100%;
+		margin: 0;
+		display: flex;
+		//justify-content: center;
+
+		.end-link {
+			font-family: Montserrat;
+			font-size: 13px;
+			line-height: 20px;
+			font-weight: 300;
+			text-decoration: none;
+			color: #959595;
+			margin: 0 20px 0 0;
+
+			&:hover {
+				color: #c7b299;
+			}
+		}
+	}
+
+	.end-txt-position {
+		margin-left: 376px;
+	}
+
+	.end-txt-position-midle {
+		margin-left: 449px;
+	}
+
+	.end-txt {
+		font-family: Montserrat;
+		font-size: 13px;
+		line-height: 20px;
+		font-weight: 300;
+		color: #555555;
+
+		.end-link {}
+	}
+}
